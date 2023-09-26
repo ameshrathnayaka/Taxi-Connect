@@ -1,1 +1,76 @@
 /* You can add global styles to this file, and also import other style files */
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+html,
+body{
+    height: 100%;
+    width: 100%;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+button,
+textarea,
+input,
+select,
+a,
+ngb-rating span{
+ -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+ -webkit-tap-highlight-color: transparent;
+ -webkit-user-select: none;
+ -khtml-user-select: none;
+ -moz-user-select: none;
+ -ms-user-select: none;
+  user-select: none;
+
+}
+
+.container{
+    max-width: 116rem;
+    width: 100%;
+    margin: 0 auto;
+    padding-inline: 2.4rem;
+}
+
+
+.visually-hidden, .visually-hidden-focusable:not(:focus):not(:focus-within) {
+    position: absolute!important;
+    margin: -1px!important;
+    overflow: hidden!important;
+    clip: rect(0,0,0,0)!important;
+}
+
+.driver-info__rate{
+    ngb-rating{
+        span{
+            color: #FFD44F;
+            font-size: 2rem;
+            line-height: 1;
+        }
+    }
+}
+
+.driver-info__add-rate{
+    ngb-rating{
+        svg{
+            fill: #FFD44F;
+            width: 4.5rem;
+        }
+    }    
+}

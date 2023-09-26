@@ -1,0 +1,31 @@
+<!-- Panel Backdrop -->
+<div class="drawer-panel__backdrop" (click)="closeDrawer()"></div>
+
+<!-- Panel Content -->
+<aside class="drawer-panel__content">
+    <div class="drawer-panel__container container">
+
+        <!-- Panel Header -->
+        <div class="drawer-panel__header">
+            <button class="drawer-panel__back-btn" (click)="closeDrawer()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <g id="icon-back" transform="translate(0 -0.131)">
+                        <rect id="icon-back_Background_" data-name="icon-back (Background)" width="24" height="24" transform="translate(0 0.131)" fill="none"/>
+                        <rect id="Rectangle_23" data-name="Rectangle 23" width="15" height="1.528" transform="translate(5 11.203)" fill="#222"/>
+                        <path id="Vector_1" data-name="Vector 1" d="M7,0,0,6.62l7,6.62" transform="translate(4 5.296)" fill="none" stroke="#222" stroke-linecap="round" stroke-width="1.5" stroke-dasharray="0 0"/>
+                    </g>
+                </svg>
+            </button>
+            <h3 class="drawer-panel__title">Driver Info</h3>
+            <button class="drawer-panel__back-btn">
+                <img src="../../assets/share.png" alt="Share Icom">
+            </button>
+        </div>
+        
+        <!-- Panel Body -->
+        <div class="drawer-panel__body">
+            <app-driver-info></app-driver-info>
+            <app-navigate *ngIf></app-navigate>        
+        </div>
+    </div>
+</aside>
